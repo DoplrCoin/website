@@ -11,7 +11,6 @@ source "https://rubygems.org"
 gem "rake" 
 gem "jekyll"
 gem "html-proofer"
-gem "jekyll-sitemap"
 
 # This is bgthe default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -23,6 +22,8 @@ gem "minima", "~> 2.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-sitemap"
+  gem 'github-pages'
   gem "jekyll-paginate"
   gem "jekyll-polyglot"
 end

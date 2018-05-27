@@ -109,6 +109,6 @@ If users refer someone, this means someone else types **!setref @username** , he
 * Start with low market cap and take a lot of the rewards for the foundation in the beginning, these funds will mostly be used for airdrops.
 * This will give a low count of coins and true scarcity, we will need to do the math ont his.
 * With pivx there's fun stuff built in  
-* example : Shekel is a fork of PIVX that forked Dash that forked Bitcoin, and they did it [in 17 commits](https://github.com/shekeltechnologies/JewNew/commits/master).
+.
 * drawback: I don't know shizzle about this.
 * another drawback: seems hard to maintain transparancy as an org, with a privacy coin. 

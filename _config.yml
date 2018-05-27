@@ -27,7 +27,7 @@ author:
 # feed
 feed:
   path: atom.xml
-  
+
 # data
 hello:
   en: Hello!
