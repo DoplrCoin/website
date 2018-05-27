@@ -37,7 +37,7 @@ plugins: [jekyll-polyglot, jekyll-paginate]
 permalink: pretty
 
 include: ['_pages']
-exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock']
+exclude: ['LICENSE.md', 'README.md', 'vendor', 'publi.sh', 'Gemfile.lock']
 # Setup
 title:            Polyglot
 tagline:          'Straightforward I18n for Jekyll Blogs'
