@@ -24,7 +24,10 @@ incremental: false
 author:
   name: 'Samuel Volin'
   url: https://github.com/untra
-
+# feed
+feed:
+  path: atom.xml
+  
 # data
 hello:
   en: Hello!
