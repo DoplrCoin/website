@@ -32,7 +32,7 @@ hello:
   fr: Bonjour!
   de: Hallo!
 
-plugins: [jekyll-polyglot, jekyll-paginate]
+plugins: [jekyll-polyglot, jekyll-paginate, jekyll-feed]
 # Permalinks
 permalink: pretty
 
