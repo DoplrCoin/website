@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SEO Recipes
-permalink: seo/
+permalink: seo
 lang: en
 ---
 # Recipes for Search Engine Optimization using Polyglot
