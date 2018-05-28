@@ -7,14 +7,14 @@ Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a pro
 
 ### Built on Poole
 
-Poole es Jekyll Butler, que sirve como una base sólida y efectiva para los temas de Jekyll por [@mdo] (https://twitter.com/mdo). Poole, y cada tema construido en él (como Hyde aquí) incluye lo siguiente:
+Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Hyde here) includes the following:
 
-* Configuración completa de Jekyll incluida (diseños, configuración, [404] (/ 404), [RSS feed] (/ atom.xml), publicaciones y [página de ejemplo] (/ sobre))
-* Diseño y desarrollo amigable para dispositivos móviles
-* Tamaño de componentes y texto fácilmente escalable con unidades `rem` en CSS
-* Soporte para una amplia gama de elementos HTML
-* Publicaciones relacionadas (basadas en el tiempo, porque Jekyll) debajo de cada publicación
-* Resaltado de sintaxis, cortesía de Pygments (el resaltador de código de código basado en Python)
+* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
+* Mobile friendly design and development
+* Easily scalable text and component sizing with `rem` units in the CSS
+* Support for a wide gamut of HTML elements
+* Related posts (time-based, because Jekyll) below each post
+* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
 
 ### Hyde features
 
