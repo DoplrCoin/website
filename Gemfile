@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.1"
 gem "htmlproofer"
+
 # This is bgthe default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
 
