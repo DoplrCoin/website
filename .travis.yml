@@ -40,6 +40,8 @@ deploy:
   bucket: doplr-site
   local-dir: "./_site"
   acl: public_read
+  cache_control: "max-age=31536000"
+  expires: "2032-12-21 00:00:00 -0000"
   skip_cleanup: true
   on:
     branch: deploytest
