@@ -1,0 +1,35 @@
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fab fa-{{ network.title }} fa-3x"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                       <!-- <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                        <li>
+                          {% for tongue in site.languages %}
+<a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
+  {% endfor %}-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                </div>
+            </div>
+        </div>
+    </footer>

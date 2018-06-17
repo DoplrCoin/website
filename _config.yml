@@ -1,63 +1,74 @@
-# Where things are
-source:       .
-destination:  ./_site
-plugins_dir:  _plugins
-layouts_dir:  _layouts
-data_dir:     _data
-includes_dir: _includes
-collections:
-  posts:
-    output:   true
-
-# server config
+url: https://y7kim.github.io
 host: 0.0.0.0
-port: 4000
+port: 4001
+# Site settings
+title: Doplr
+email: info@doplr.com
+description: "The coin of all coins"
 
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
 
-# author
-author:
-  name: 'Samuel Volin'
-  url: https://github.com/untra
+# Team names, titles and social links
+people:
+- name: Kay Garland
+  pic: 1
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
 
-# data
-hello:
-  en: Hello!
-  es: ¡hola!
-  fr: Bonjour!
-  de: Hallo!
+- name: Larry Parker
+  pic: 2
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
 
-plugins: [jekyll-polyglot, jekyll-paginate]
-# Permalinks
+- name: Diana Petersen
+  pic: 3
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/doplrcoin
+  - title: reddit
+    url: https://www.reddit.com/r/doplr
+  - title: telegram
+    url: https://t.me/DoplrCoin
+  - title: discord
+    url: https://discord.gg/7BCq8TX
+  - title: discourse
+    url: https://forum.doplr.com/
+
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
 permalink: pretty
 
-include: ['_pages']
-exclude: ['LICENSE.md', 'README.md', 'vendor', 'publi.sh', 'Gemfile.lock']
-# Setup
-title:            Polyglot
-tagline:          'Straightforward I18n for Jekyll Blogs'
-description:
-  de: Ein sprachunterstützung plugin für <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, die Unterstützung der Internationalisierung schnell und intuitiv macht, für Blogs groß und klein. Hergestellt von <a href="https://github.com/untra" target="_blank">@untra</a>.
-  es: Un plugin soporte de i18n para <a href="http://jekyllrb.com" target="_blank">Jekyll</a> que hace soporte de internacionalización rápida e intuitiva, para los blogs grandes y pequeños. Hecho por <a href="https://github.com/untra" target="_blank">@untra</a>.
-  fr: Un plugin de support de i18n pour <a href="http://jekyllrb.com" target="_blank">Jekyll</a> qui fait support de l'internationalisation rapide et intuitive, pour les blogs grands et petits. Réalisé par <a href="https://github.com/untra" target="_blank">@untra</a>.
-  en: A i18n support plugin for <a href="http://jekyllrb.com" target="_blank">Jekyll</a> that makes multi-language support fast and intuitive, for blogs big and small. Made by <a href="https://github.com/untra" target="_blank">@untra</a>.
-
-url: https://polyglot.untra.io
-
-paginate: 5
-# Custom vars
-version: 0.0.1
-
-github:
-  repo: https://github.com/untra/polyglot
-
-#Polyglotf
-languages: ["en", "es", "de", "fr", "jp"]
+plugins:
+  - jekyll-polyglot
+languages: ["en", "fr", "nl", "jpn"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "public"]
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: true
 data_dir: ./_data
