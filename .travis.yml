@@ -1,5 +1,6 @@
 language: ruby
 cache: bundler
+
 rvm:
   - &ruby 2.4.1
 
@@ -30,6 +31,7 @@ env:
     branch: gh-pages
 
 sudo: false # route your build to the container-based infrastructure for a faster build
+
 deploy:
   provider: s3
   access_key_id: AKIAIOAFZJ4I44U3RI5Q
@@ -38,5 +40,8 @@ deploy:
   bucket: doplr-site
   local-dir: "./_site"
   acl: public_read
+  cache_control: "max-age=31536000"
+  expires: "2032-12-21 00:00:00 -0000"
+  skip_cleanup: true
   on:
     repo: DoplrCoin/website
