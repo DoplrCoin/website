@@ -30,6 +30,7 @@ env:
     branch: gh-pages
 
 sudo: false # route your build to the container-based infrastructure for a faster build
+
 deploy:
   provider: s3
   access_key_id: AKIAIOAFZJ4I44U3RI5Q
