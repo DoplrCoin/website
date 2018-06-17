@@ -41,5 +41,4 @@ deploy:
   skip_cleanup: true
   on:
     branch: deploytest
-  on:
     repo: DoplrCoin/website
