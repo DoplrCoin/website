@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - &ruby 2.4.1
 install:
-- bundle install
+- bundle install --no-prune 
 cache: bundler
 cache:
   directories:
