@@ -1,8 +1,5 @@
 language: ruby
 cache: bundler
-cache:
-  directories:
-  - $HOME/.casher
 rvm:
   - &ruby 2.4.1
 
