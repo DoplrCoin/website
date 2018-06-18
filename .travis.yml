@@ -1,6 +1,7 @@
 language: ruby
 cache: bundler
-
+  directories:
+  - $HOME/.casher
 rvm:
   - &ruby 2.4.1
 
@@ -15,7 +16,7 @@ script: ./script/cibuild
 branches:
   only:
   - master     # only do the master branch
-
+/.casher
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
