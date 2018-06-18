@@ -13,7 +13,7 @@
             </div>
             <div >
             {% for tongue in site.languages %}
-                <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
+                <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}">{{ tongue }}</a> |
             {% endfor %}
             </div>
 
@@ -39,7 +39,7 @@
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
-                    
+
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>-->
