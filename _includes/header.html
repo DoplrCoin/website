@@ -16,19 +16,21 @@
                 <div class="js-languages" data-tv-accordion accordion-panel=".languages-title" accordion-content=".languages-menu" accordion-type="dropdown" accordion-is-responsive="true">
                     <div class="languages-title">
                         <i class="languages-icon fa fa-globe"></i>
-                        <span class="languages-chosen">
-                            {% for tongue in site.languages %}
-                                {% if tongue == site.active_lang %}
-                                    {{ tongue }}
-                                {% endif %}
-                            {% endfor %}
+                        <span class="languages-chosen">                            
+                            {{ site.active_lang }} 
                         </span>
                         <i class="languages-dropdown-icon dropdown-icon"></i>
                     </div>
                     <ul class="languages-menu header-languages-menu">
                         {% for tongue in site.languages %}
                         {% if tongue != site.active_lang %}
-                        <li class="languages-menu-item"><a class="languages-menu-item-link"  href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}">{{ tongue }}</a> 
+                       <!-- debug tongue = {{tongue}} defaul_lang = {{site.default_lang}} page_url {{page_url}}-->
+                        <li class="languages-menu-item">
+                            <a class="languages-menu-item-link"  href="{% if tongue == site.default_lang %}
+                                {{site.baseurl}}{{page.url}}
+                                {% else %}
+                                {{site.baseurl}}/{{ tongue }}{{page.url}}
+                                {% endif %}">{{ tongue }}</a> 
                         </li>
                         {% endif %}
                         {% endfor %}
