@@ -12,39 +12,31 @@
                 <!--<a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>-->
             </div>
 
-
-
-
-
-
             <div class="header-divider-left header-divider-right header-languages languages pull-left">
-    <div class="js-languages" data-tv-accordion accordion-panel=".languages-title" accordion-content=".languages-menu" accordion-type="dropdown" accordion-is-responsive="true">
-        <div class="languages-title">
-            <i class="languages-icon fa fa-globe"></i>
-            <span class="languages-chosen">English</span>
-            <i class="languages-dropdown-icon dropdown-icon"></i>
-        </div>
-        <ul class="languages-menu header-languages-menu">
-            <li class="languages-menu-item"><a class="languages-menu-item-link" href="http://kr.visitmelbourne.com/" target="_blank" title="한국어">한국어</a></li>
-            <li class="languages-menu-item"><a class="languages-menu-item-link" href="http://jp.visitmelbourne.com/" target="_blank" title="日本語">日本語</a></li>
-            <li class="languages-menu-item"><a class="languages-menu-item-link" href="http://fr.visitmelbourne.com/" target="_blank" title="Français">Français</a></li>
-            <li class="languages-menu-item"><a class="languages-menu-item-link" href="http://www.visitvictoria.com/" target="_blank">English</a></li>
-            <li class="languages-menu-item"><a class="languages-menu-item-link" href="http://it.visitmelbourne.com/" target="_blank" title="Italian">Italian</a></li>
-        </ul>
-     </div>
-</div>
-
-
-
-
-<!--
-
-            <div >
-            {% for tongue in site.languages %}
-                <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}">{{ tongue }}</a> |
-            {% endfor %}
+                <div class="js-languages" data-tv-accordion accordion-panel=".languages-title" accordion-content=".languages-menu" accordion-type="dropdown" accordion-is-responsive="true">
+                    <div class="languages-title">
+                        <i class="languages-icon fa fa-globe"></i>
+                        <span class="languages-chosen">
+                            {% for tongue in site.languages %}
+                                {% if tongue == site.active_lang %}
+                                    {{ tongue }}
+                                {% endif %}
+                            {% endfor %}
+                        </span>
+                        <i class="languages-dropdown-icon dropdown-icon"></i>
+                    </div>
+                    <ul class="languages-menu header-languages-menu">
+                        {% for tongue in site.languages %}
+                        {% if tongue != site.active_lang %}
+                        <li class="languages-menu-item"><a class="languages-menu-item-link"  href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}">{{ tongue }}</a> 
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
--->
+
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                 <ul class="nav navbar-nav navbar-right">
