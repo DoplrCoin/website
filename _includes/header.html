@@ -22,16 +22,16 @@
                         <i class="languages-dropdown-icon dropdown-icon"></i>
                     </div>
                     <ul class="languages-menu header-languages-menu">
-                        {% for tongue in site.languages %}
-                        {% if tongue != site.active_lang %}
-                         <li class="languages-menu-item">
-                            {% if tongue == site.default_lang %}
-                                 <a indeif class="languages-menu-item-link"  href="\">{{ tongue }}</a> 
-                            {% else %}
-                                 <a indeelse class="languages-menu-item-link"  href="{{site.baseurl}}/{{ tongue }}{{page.url}}">{{ tongue }}</a>
+                       {% for tongue in site.languages %}
+                            {% if tongue != site.active_lang %}
+                                <li class="languages-menu-item">
+                                    {% if tongue == site.default_lang %}
+                                        <a class="languages-menu-item-link" href="/#">{{ tongue }}</a>
+                                    {% else %} 
+                                        <a class="languages-menu-item-link" href="{{ site.baseurl }}/{{ tongue }}{{ page.url }}">{{ tongue }}</a>
+                                    {% endif %}
+                                 </li>
                             {% endif %}
-                        </li>
-                        {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
