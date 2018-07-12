@@ -26,11 +26,7 @@
                         {% if tongue != site.active_lang %}
                        <!-- debug tongue = {{tongue}} defaul_lang = {{site.default_lang}} page_url {{page_url}}-->
                         <li class="languages-menu-item">
-                            <a class="languages-menu-item-link"  href="{% if tongue == site.default_lang %}
-                                {{site.baseurl}}{{page.url}}
-                                {% else %}
-                                {{site.baseurl}}/{{ tongue }}{{page.url}}
-                                {% endif %}">{{ tongue }}</a> 
+                            <a class="languages-menu-item-link"  href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}">{{ tongue }}</a> 
                         </li>
                         {% endif %}
                         {% endfor %}
